@@ -30,7 +30,7 @@ void main(List<String> args) {
   print(map.remove("name"));
 
   // 字符串 String
-  String name = "hello worldssss";
+  // String name = "hello worldssss";
   print(name);
 
   name = "你好";
