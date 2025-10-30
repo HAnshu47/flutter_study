@@ -30,32 +30,32 @@ void main(List<String> args) {
             ),
           ],
         ),
-        body: Container(
-          color: const Color.fromARGB(255, 62, 61, 55),
-          child: Column(
-            mainAxisAlignment:
-                MainAxisAlignment.spaceBetween, //水平，类似justify-content
-            crossAxisAlignment: CrossAxisAlignment.center, //垂直，类似align-items
-            children: [
-              Container(
-                child: Text('hello world'),
-                width: 100,
-                height: 100,
-                color: Colors.red,
+        body: Center(
+          child: Container(
+            width: double.infinity,
+            // color: const Color.fromARGB(255, 82, 81, 68),
+            height: double.infinity, // double.infinity 填充剩余空间100%
+            margin: EdgeInsets.all(100),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: const Color.fromARGB(255, 82, 81, 68), //有圆角颜色需要写在内部
+            ),
+            child: Container(
+              child: Center(child: 
+              Text(
+                'hello world',
+                style: TextStyle(color: Colors.green, fontSize: 20),
+                ),
               ),
-              Container(
-                child: Text('hello world'),
-                width: 100,
-                height: 100,
-                color: Colors.red,
+              width: double.infinity,
+              // color: const Color.fromARGB(255, 82, 81, 68),
+              height: double.infinity, // double.infinity 填充剩余空间100%
+              margin: EdgeInsets.all(100),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: const Color.fromARGB(255, 82, 81, 68), //有圆角颜色需要写在内部
               ),
-              Container(
-                child: Text('hello world'),
-                width: 100,
-                height: 100,
-                color: Colors.red,
-              ),
-            ],
+            ),
           ),
         ),
         bottomNavigationBar: Container(
